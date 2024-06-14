@@ -1,0 +1,91 @@
+/* Estilos generales */
+:root {
+  --colorone: rgb(29, 108, 212);
+  --colortwo: rgb(40, 124, 202);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #e6f0ff;
+  color: var(--colortwo);
+}
+header {
+  width: 100%;
+  height: 20%;
+  z-index: 3;
+  border-bottom: double var(--colorone) 4px;
+  background-color: white;
+  position: fixed;
+  margin: 0 auto;
+}
+header > h1 {
+  position: relative;
+  top: 30%;
+  margin-left: 15px;
+}
+header {
+  background-image: url(https://ivrea.com.ar/onepiece/logoonepiece.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content {
+  width: 100%;
+  position: absolute;
+  top: 23%;
+  border-bottom: double var(--colorone) 4px;
+  border-top: double var(--colorone) 4px;
+}
+
+.content > * {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 41%;
+  left: 90%;
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 8%;
+  height: 23%;
+  border: double 3px;
+}
+.sidebar > h3 {
+  text-align: center;
+}
+.Yonkous {
+  list-style-type: none;
+  padding-left: 6px;
+}
+
+.features {
+  position: absolute;
+  top: 66%;
+  border-bottom: double var(--colorone) 4px;
+  border-top: double var(--colorone) 4px;
+}
+.features > * {
+  margin-left: 15px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  width: 20%;
+  height: 5%;
+  border: 4px groove var(--colorone);
+  bottom: -40%;
+}
